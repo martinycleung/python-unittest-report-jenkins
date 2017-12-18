@@ -31,9 +31,9 @@ class exampleTest(unittest.TestCase):
 
         self.assertEqual(self.exampleClass.Divide(9,3),3) 
         
-    def testMinusFail(self):
+    def testMinusSuccess(self):
 
-        self.assertEqual(self.exampleClass.Minus(2, 1), 3)
+        self.assertEqual(self.exampleClass.Minus(2, 1), 1)
 
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output="./python_unittests_xml"))
