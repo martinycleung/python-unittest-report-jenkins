@@ -23,6 +23,14 @@ class exampleTest(unittest.TestCase):
 
         self.assertEqual(self.exampleClass.Plus(1,2),3)
 
+    def testPowerSuccess(self):
+
+        self.assertEqual(self.exampleClass.Power(2,3),8)        
+        
+    def testDivideSuccess(self):
+
+        self.assertEqual(self.exampleClass.Divide(9,3),3) 
+        
     def testMinusFail(self):
 
         self.assertEqual(self.exampleClass.Minus(2, 1), 3)
